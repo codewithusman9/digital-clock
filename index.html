@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #clock{
+      font-size: 3rem;
+      font-family: monospace;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    //Update the clock display every second
+    setInterval(() => {
+      //Get the current time and format it as a localized time string
+      const timeString = new Date().toLocaleTimeString();
+      //Set the innerHTML of the clock div to the time string
+      document.getElementById('clock').innerHTML=timeString;
+    }, 1000);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- Update the clock display every second
+ Get the current time and format it as a localized time string
+Set the innerHTML of the clock div to the time string -->
+    
